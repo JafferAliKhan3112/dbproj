@@ -1,0 +1,15 @@
+package com.example.admin.dbproj;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+    private WordListOpenHelper mDB;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mDB = new WordListOpenHelper(this);
+    }
+}
